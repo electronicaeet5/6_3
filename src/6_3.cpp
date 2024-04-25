@@ -1,7 +1,7 @@
 #include "6_3.h"
 #include <algorithm>
 #include <iostream>
-#define CANTIDAD_NUMEROS 10
+
 
 int16_t leerdato()
 {
@@ -14,13 +14,3 @@ int16_t leerdato()
     return valores[i];
 }
 
-int main()
-{
-    auto max=leerdato();
-    for(uint8_t i=0;i<CANTIDAD_NUMEROS-1;i++)
-    {
-        max=std::max(max,leerdato());
-    }
-    std::cout << "el maximo es " << max << std::endl;
-    return 0;
-}
